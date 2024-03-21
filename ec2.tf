@@ -1,4 +1,4 @@
-resource "aws_instance" "fuel" {
+resource "aws_instance" "fish" {
   ami           = "ami-0cf7b2f456cd5efd4"
   instance_type = "t2.micro"
 
@@ -8,7 +8,7 @@ resource "aws_instance" "fuel" {
   associate_public_ip_address = true
   user_data                   = "${file("data.sh")}"
   tags = {
-    Name = "fuel-consumption"
+    Name = "FISH"
   }
 
   }
