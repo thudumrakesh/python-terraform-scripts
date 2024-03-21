@@ -8,7 +8,7 @@ resource "aws_instance" "fish" {
   associate_public_ip_address = true
   user_data                   = "${file("data.sh")}"
   tags = {
-    Name = "FISH"
+    Name = "CAR"
   }
 
   }
